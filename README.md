@@ -1,5 +1,5 @@
 # MySQL-database-project
-This project uses DDL(insert, update, delete) and DML (create, replace)  to create and populate a Database schema with information about customers of a local Kayaking businesses alongside various queries using joins, unions, aggregate functions, view and subqueries to manipulate data.
+This project uses DML(insert, update, delete, select) and DDL (create, replace, alter, drop) to populate a Database schema with information about customers of a local Kayaking businesses alongside various queries using joins, unions, aggregate functions, views and subqueries to manipulate data.
 
 
 #02 _phone_list.sql
