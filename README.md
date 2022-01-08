@@ -197,36 +197,36 @@ This script will delete the reservation of Bart Samuels, Jr. on trip #562.
 	DELETE FROM reservation WHERE (trip_number = '562') AND (guest_id = '2');  
 
 
-#12_add_a_new_employee.sql
-This script will insert rows into the tables of the www database in order to create a new
-guide employee
+	#12_add_a_new_employee.sql
+	This script will insert rows into the tables of the www database in order to create a new
+	guide employee
 
- USE WWW;
-INSERT INTO employee (employee_id, first_name, last_name, nickname, mobile_phone, availability_notes) VALUES ('10', 'Patrick L.', 'Patterson', 'Pat', '847-555-9706', 'All Saturdays and Sundays');
-INSERT INTO plays_role (employee_id, role_code) VALUES ('10', '2');
-INSERT INTO plays_role (employee_id, role_code) VALUES ('10', '3');
+	 USE WWW;
+	INSERT INTO employee (employee_id, first_name, last_name, nickname, mobile_phone, availability_notes) VALUES ('10', 'Patrick L.', 'Patterson', 'Pat', '847-555-9706', 'All Saturdays and Sundays');
+	INSERT INTO plays_role (employee_id, role_code) VALUES ('10', '2');
+	INSERT INTO plays_role (employee_id, role_code) VALUES ('10', '3');
 
-#13_delete_an_existing_employee.sql
-This script should delete the employee Summer Simms.
+	#13_delete_an_existing_employee.sql
+	This script should delete the employee Summer Simms.
 
- USE WWW;
-DELETE FROM plays_role WHERE (employee_id = '6') ;
-DELETE FROM employee WHERE (employee_id = '6');
-
-
-
-#14_add_a_new_trip.sql
-This script will add a new trip into the database
-
- USE WWW;
-INSERT INTO trip (trip_number, trip_date, capacity, latest_guest_arrival_time, departure_time, estimated_return_time, estimated_return_time, destination_name, trip_type_name, guide_employee, gear_employee, gathering_point)
- VALUES ('666', '2021-02-08', '7', '07:30:00', '08:15:00', '16:00:00', 'Upper Wisconsin River', 'Kayak', 'Patt Patterson', 'NONE' , 'Omars Live Bait and Bridal Salon,
-3421 Highway KZ, Casino Springs,
-WI 54776');
+	 USE WWW;
+	DELETE FROM plays_role WHERE (employee_id = '6') ;
+	DELETE FROM employee WHERE (employee_id = '6');
 
 
-#15_delete_an_existing_trip.sql
-This script will DELETE trip #576
- use WWW;
-DELETE FROM reservation WHERE (trip_number='576');
-DELETE FROM trip WHERE (trip_number = '576');
+
+	#14_add_a_new_trip.sql
+	This script will add a new trip into the database
+
+	 USE WWW;
+	INSERT INTO trip (trip_number, trip_date, capacity, latest_guest_arrival_time, departure_time, estimated_return_time, estimated_return_time, destination_name, trip_type_name, guide_employee, gear_employee, gathering_point)
+	 VALUES ('666', '2021-02-08', '7', '07:30:00', '08:15:00', '16:00:00', 'Upper Wisconsin River', 'Kayak', 'Patt Patterson', 'NONE' , 'Omars Live Bait and Bridal Salon,
+	3421 Highway KZ, Casino Springs,
+	WI 54776');
+
+
+	#15_delete_an_existing_trip.sql
+	This script will DELETE trip #576
+	 use WWW;
+	DELETE FROM reservation WHERE (trip_number='576');
+	DELETE FROM trip WHERE (trip_number = '576');
