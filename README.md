@@ -190,8 +190,8 @@
         
         
  
- #11_delete_a_reservation.sql
-This script will delete the reservation of Bart Samuels, Jr. on trip #562.
+	 #11_delete_a_reservation.sql
+	This script will delete the reservation of Bart Samuels, Jr. on trip #562.
 
    	USE WWW;
 	DELETE FROM reservation WHERE (trip_number = '562') AND (guest_id = '2');  
