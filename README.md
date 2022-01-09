@@ -2,7 +2,7 @@
 	This project uses DML(insert, update, delete, select) and DDL (create, replace, alter, drop) to populate a Database schema with information about customers of a local Kayaking businesses alongside various queries using joins, unions, aggregate functions, views and subqueries to manipulate data.
 
 
-	#02 _phone_list.sql
+	#02_phone_list.sql
 	USE WWW;
 	SELECT employee_id, nickname, CONCAT(first_name, '', last_name) AS "employee name", mobile_phone, home_phone
 	FROM employee
