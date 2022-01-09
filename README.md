@@ -9,7 +9,7 @@
 	ORDER BY nickname;
 
 
-	03_guide_roles_list: In order of nickname, role_name. One row per employee, per role.)
+	#03_guide_roles_list: In order of nickname, role_name. One row per employee, per role.)
 	• nickname
 	• employee name (first_name + space + last_name)
 	• role_name
